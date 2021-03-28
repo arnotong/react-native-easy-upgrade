@@ -49,7 +49,7 @@ public class EasyDownloadManager {
 
 
         if(external){
-            request.setDestinationInExternalPublicDir(external_path, saveAsName);
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, saveAsName);
 
         }else{
             request.setDestinationInExternalFilesDir(context, Environment.DIRECTORY_DOWNLOADS, saveAsName);
